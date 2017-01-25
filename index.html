@@ -4,22 +4,38 @@
 <meta charset="utf-8">
 <title>Shelving Demo</title>
 <link href="main.css" rel="stylesheet" type="text/css" charset="utf-8">
+
+<!--
 <script src="vendor/three.js/r84/build/three.js"></script>
-<!--
+-->
+
 <script src="vendor/three.js/r84/build/three.min.js"></script>
--->
+
 <script src="vendor/three.js/r84/examples/js/controls/OrbitControls.js"></script>
-<!--
-<script src="vendor/three.js/r84/examples/js/controls/FirstPersonControls.js"></script>
--->
-<!--
+
+<script src="vendor/three.js/r84/examples/js/loaders/MTLLoader.js"></script>
 <script src="vendor/three.js/r84/examples/js/loaders/OBJLoader.js"></script>
--->
+
 <script src="vendor/three.js/stats/build/stats.min.js"></script>
+<script src="vendor/dat.gui/dat.gui.js"></script>
 
 <script src="app.js"></script>
 </head>
 <body>
+<div id="preload">
+    <div>
+        <div>Loading...</div>
+        <progress value="0" max="100"></progress>
+    </div>
+</div>
+
 <canvas id="appCanvas" oncontextmenu="return false;">Browser not supported</canvas>
+
+<video id="video" style="display: none;" src="assets/Big_Buck_Bunny_small.ogv"></video>
+
+<div id="notification">
+    
+</div>
+
 </body>
 </html>

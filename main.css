@@ -5,33 +5,104 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    color: white;
+    background: #000;
+    font-family: 'Lucida Grande', sans-serif;
+    font-size: 15px;
 }
 #appCanvas {
     width: 100%;
     height: 100%;
     touch-action: none;
 }
-footer nav {
-    position: fixed;
-    bottom: 25px;
-    left: 10px;
+#preload {
+    position: absolute;
+    left: 0px;
+    top: 0px;
     width: 100%;
-    color: white;
-    font-weight: bold;
-    overflow: hidden;
+    height: 100%;
+    opacity: 0.8;
+    background: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-footer nav .colorPicker {
-    width: 150px;
+/* customize gui */
+.dg .slider {
+    pointer-events: none !important;
+    display: none !important;
+    width: 50% !important;
 }
-footer nav ul {
-    list-style-type: none;
-    list-style-position: outside;
-    padding: 0px;
+.dg input[type=text] {
+    width: 50% !important;
 }
-nav li {
-    float: left;
-    margin-right: 10px;
+.dg .c {
+    width: 50% !important;
 }
-input {
-    vertical-align: middle;
+.dg .property-name {
+    width: 50% !important;
+}
+
+#notification {
+    height: 25px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    border: 1px solid #2c2c2c;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background: #1a1a1a;
+    padding: 5px;
+    font-size: 15px;
+    color: #aaa;
+/*
+    resize: vertical;
+*/
+}
+#notification span {
+    opacity: 1;
+    transition: opacity 1s;
+}
+#notification span.new {
+    opacity: 0;
+}
+#notification span.error {
+    color: #ff0000;
+}
+#notification span:first-child {
+    color: #ccffcc;
+}
+
+/* type=number fields */
+.dg input[type=number] {
+    width: 50% !important;
+}
+.dg .c input[type=number] {
+    border: 0;
+    margin-top: 4px;
+    padding: 3px;
+    width: 100%;
+    float: right;
+}
+.dg .has-slider input[type=number] {
+    width: 30%;
+    margin-left: 0;
+}
+.dg .cr.number input[type=number] {
+    color: #2FA1D6;
+}
+.dg .cr.string input[type=number] {
+    color: #1ed36f; 
+}
+.dg .c input[type=number] {
+    background: #303030;
+    outline: none;
+}
+.dg .c input[type=number]:hover {
+    background: #3c3c3c;
+}
+.dg .c input[type=number]:focus {
+    background: #494949;
+    color: #fff;
 }
