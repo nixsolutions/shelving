@@ -751,7 +751,11 @@ App.prototype = {
         this.calculateOutput();
         this.gui.domElement.hidden = false;
     },
-    
+    calculateDistanceBetweenShelves: function(shelvesHeight) {
+        // check free height
+        var freeHeight = shelvesHeight - this.options.shelvesNum * this.options.shelf.thickness;
+        return parseInt(freeHeight / (this.options.shelvesNum - 1));
+    },
     createShelving: function() {
         var updateGui = false;
         this.shelving = new THREE.Group();
@@ -769,9 +773,7 @@ App.prototype = {
         
         // if there's only one shelf then it already fits due to the previous check
         if (this.options.shelvesNum > 1) {
-            // check free height
-            var freeHeight = shelvesHeight - this.options.shelvesNum * this.options.shelf.thickness;
-            var distanceBetweenShelves = parseInt(freeHeight / (this.options.shelvesNum - 1));
+            var distanceBetweenShelves = this.calculateDistanceBetweenShelves(shelvesHeight);
             if (distanceBetweenShelves < this.distanceBetweenShelvesMin) {
                 // adjust shelvesNum
                 updateGui = true;
@@ -781,6 +783,10 @@ App.prototype = {
                     shelvesNum = 1;
                 }
                 this.options.shelvesNum = shelvesNum;
+                
+                if (shelvesNum > 1) {
+                    distanceBetweenShelves = this.calculateDistanceBetweenShelves(shelvesHeight);
+                }
                 
                 this.notifier.notify('Number of shelves was been adjusted as there is not enough space to fit all of them');
             }
