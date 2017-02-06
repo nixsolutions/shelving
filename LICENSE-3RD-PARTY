@@ -1,0 +1,40 @@
+LICENSE-3RD-PARTY
+
+-----------------------------------------------------------------------------
+The MIT License (MIT)
+    applies to: 
+    - Three.js - Copyright © 2010-2017 three.js authors (see https://github.com/mrdoob/three.js/blob/r84/LICENSE)
+-----------------------------------------------------------------------------
+Free Art License
+    applies to:
+    - content of assets/YosemiteFrame/ - Sweet Home 3D, Copyright (c) 2005-2017 Emmanuel PUYBARET / eTeks <info@eteks.com>
+    - content of assets/livreJava/ - Sweet Home 3D, Copyright (c) 2005-2017 Emmanuel PUYBARET / eTeks <info@eteks.com>
+-----------------------------------------------------------------------------
+Creative Commons Attribution 3.0 Unported License
+    applies to: 
+    - content of assets/wall-flat-tv/ - Emmanuel PUYBARET / eTeks <info@eteks.com>  and Scopia Visual Interfaces Systems, s.l. (http://www.scopia.es)
+    - content of assets/simple_sofa/ - Scopia Visual Interfaces Systems, s.l. (http://www.scopia.es)
+    - content of assets/ficus/ - Emmanuel PUYBARET / eTeks <info@eteks.com>  and Scopia Visual Interfaces Systems, s.l. (http://www.scopia.es)
+    - content of assets/hangingLight/ - Emmanuel PUYBARET / eTeks <info@eteks.com>  and Scopia Visual Interfaces Systems, s.l. (http://www.scopia.es) (see also assets/hangingLight/BLENDSWAP_LICENSE.txt)
+    - assets/Big_Buck_Bunny_small.ogv - (c) copyright 2008, Blender Foundation / www.bigbuckbunny.org
+-----------------------------------------------------------------------------
+Creative Commons Attribution 3.0 United States license
+    - content of assets/sitFemale03/ - (C) Copyrights Reallusion http://www.reallusion.com/
+-----------------------------------------------------------------------------
+Creative Commons Attribution 4.0 International license
+    applies to: 
+    - assets/beech.jpg, assets/birch.jpg, assets/oak.jpg, assets/oak2.jpg, assets/oak3.jpg, 
+    assets/pine.jpg, assets/poplar.jpg, assets/cherry.jpg - (C) Copyrights 2017 Ola-Kristian Hoff / eTeks <info@eteks.com>
+    - assets/floor-carpeting.jpg, assets/white_with_stars_wallpaper.png - (C) Copyrights 2014-2017 Emmanuel PUYBARET / eTeks <info@eteks.com> and Scopia Visual Interfaces Systems, s.l. (http://www.scopia.es)
+
+Apache License Version 2.0
+-----------------------------------------------------------------------------
+    applies to: 
+    - dat.gui library - Copyright 2014, Google Inc.
+
+3RD-PARTY work that were modified to meet project requirements:
+dat.gui (vendor/dat.gui/),
+assets/wall-flat-tv/tv-screen.jpg,
+assets/livreJava/BienProgrammerEnJava7.jpg,
+assets/ficus/barc2.jpg,
+assets/YosemiteFrame/Yosemite.jpg
