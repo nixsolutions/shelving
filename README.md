@@ -31,4 +31,3 @@ License
 The Shelving Demo application is open-sourced software licensed under the MIT license (see LICENSE)
 and uses third party libraries 
 and assets under their own terms (see LICENSE-3RD-PARTY).
-All third party libraries and assets have open-source licenses.
