@@ -25,3 +25,10 @@ Learning topics
 2. Debug tools: AxisHelper and  fps stats.
 3. Loading and working with external geometries and textures.
 4. Using video texture
+
+License
+------------
+The Shelving Demo application is open-sourced software licensed under the MIT license (see LICENSE)
+and uses third party libraries 
+and assets under their own terms (see LICENSE-3RD-PARTY).
+All third party libraries and assets have open-source licenses.
