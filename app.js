@@ -218,7 +218,9 @@ App.prototype = {
         hangingLight: {path: 'hangingLight/', scale: [5, 5, 5], offset: [0, -1330, 0], rotation: [0, 0, 0]},
         simple_sofa: {path: 'simple_sofa/', scale: [800, 800, 800], offset: [0, 0, -350], rotation: [0, Math.PI, 0]},
         'wall-flat-tv': {path: 'wall-flat-tv/', scale: [10, 10, 10], offset: [0, 1400, -70], rotation: [0, -Utils.PI_HALF, 0]},
-        'livreJava': {path: 'livreJava/', scale: [12, 12, 12], offset: [0, 20, 70], rotation: [0, -Math.PI / 10, 0]}
+        'livreJava': {path: 'livreJava/', scale: [12, 12, 12], offset: [0, 20, 70], rotation: [0, -Math.PI / 10, 0]},
+        
+        'sitFemale03': {path: 'sitFemale03/', scale: [9, 9, 9], offset: [-200, 0, -500], rotation: [0, Math.PI - Math.PI / 4, 0]}
     },
     init: function(canvasId) {
         var self = this;
@@ -379,7 +381,12 @@ App.prototype = {
             texture.magFilter = THREE.LinearFilter;
             object.children[1].material.map = texture;
         }
-                        
+        if (name === 'sitFemale03') {
+            object.children[0].material.materials.forEach(function(material) {
+                material.needsUpdate = true;
+                material.shininess = 0;
+            });
+        }                
         this.models[name] = object;
         this.scene.add(object);
     },
@@ -427,8 +434,13 @@ App.prototype = {
                 if (this.options.sectionsNum === 1) {
                     object.position.x = 0;
                 }
-            }            
+            }
             
+            if (name === 'sitFemale03') {
+                object.position.x = params.offset[0];
+                object.position.y = 0;
+                object.position.z = this.options.room.width / 2 + params.offset[2];
+            }
         }
     },
     loadTextures: function() {
