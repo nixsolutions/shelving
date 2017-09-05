@@ -1,0 +1,9 @@
+{
+  "name": "Shelving - Three.js Demo 3D Application",
+  "repository": "https://github.com/nixsolutions/shelving",
+  "demo": "https://nixsolutions.github.io/shelving/",
+  "logo_background": "bg5",
+  "description": "Specify shelving dimensions, choose materials and check how it looks in your room. The application also calculates amounts of wood and prices.",
+  "language": "js",
+  "technology": ["js", "WebGL", "three.js"]
+}
